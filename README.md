@@ -1,6 +1,6 @@
 # Cumulocity Web Development Tutorial Samples
 
-Accompanying examples to the [Cumulocity Web Development Tutorial]() in the TechCommunity. Each directory provides a sample for the corresponding article in the tutorial series. 
+Accompanying examples to the [Cumulocity Web Development Tutorial](https://tech.forums.softwareag.com/t/cumulocity-web-development-tutorial-part-1-start-your-journey/259613) in the TechCommunity. Each directory provides a sample for the corresponding article in the tutorial series. 
 
 Make sure to run the command
 
