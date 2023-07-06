@@ -82,8 +82,12 @@ export class DeviceInfoService {
         response.data[0],
         `${measurementFragment}.${measurementSeries}.unit`
       );
+      const time: string = get(
+        response.data[0],
+        'time'
+      );
 
-      this.temperatureMeasurement$.next({ value: temperatureValue, unit: temperatureUnit });
+      this.temperatureMeasurement$.next({ value: temperatureValue, unit: temperatureUnit, time: time });
     } catch (error) {
       console.error('Error occurred while loading the latest measurement: ', error);
     }
@@ -110,7 +114,8 @@ export class DeviceInfoService {
           measurement,
           `${measurementFragment}.${measurementSeries}.unit`
         );
-        this.temperatureMeasurement$.next({ value: temperatureValue, unit: temperatureUnit });
+        const time: string = measurementNotification.data.data.time;
+        this.temperatureMeasurement$.next({ value: temperatureValue, unit: temperatureUnit , time: time});
       }
     );
   }

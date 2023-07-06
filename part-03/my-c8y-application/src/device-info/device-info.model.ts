@@ -6,4 +6,5 @@ export interface DeviceDetails {
 export interface TemperatureMeasuerement {
   value: number;
   unit: string;
+  time: string;
 }
